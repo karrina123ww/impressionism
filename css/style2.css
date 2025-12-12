@@ -1,0 +1,218 @@
+        /* Ваши кастомные цвета и стили */
+        :root {
+            --header-bg: #EAE3D6;
+            --main-bg: #F8F5F0;
+            --text-color: #3E3B39;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--main-bg);
+            padding-top: 76px;
+            color: var(--text-color) !important;
+        }
+        /* Устанавливаем цвет текста для всех основных элементов */
+        h1, h2, h3, h4, h5, h6,
+        p, .navbar-nav .nav-link,
+        .navbar-brand, .logo-text,
+        .custom-footer,
+        .custom-footer a {
+            color: var(--text-color) !important;
+        }
+        /* Стили для шапки */
+        .custom-header {
+            background-color: var(--header-bg) !important;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+        .logo-text {
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        /* Стили для навигационных ссылок */
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            margin: 0 5px;
+            font-size: 30px;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: 600;
+        }
+        
+        /* Основные стили для страницы художников */
+        .main-title {
+            padding: 8rem 0 3rem;
+            text-align: center;
+            border-bottom: 1px solid #e9e1d5;
+        }
+        
+        h2 {
+            font-weight: 600;
+            font-size: 45px;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 35px;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 25px;
+            line-height: 1.6;
+        }
+        
+        /* Стили для блоков художников */
+        .artist-block {
+            padding: 2rem 0;
+            border-bottom: 1px solid #e9e1d5;
+        }
+        
+        .artist-photo {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .artist-info {
+            padding: 0 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .artist-years {
+            font-size: 25px;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+        
+        .artist-bio {
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+            text-align: justify;
+        }
+        
+        /* Стили для галереи картин */
+        
+        .painting-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .painting-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .painting-img:hover {
+            transform: scale(1.03);
+        }
+        
+        .painting-title {
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        /* Подвал */
+        .custom-footer {
+            background-color: var(--header-bg);
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        .custom-footer a {
+            text-decoration: none;
+        }
+
+        #site-logo {
+            height: 130px;
+        }
+        
+        .artist-header {
+            padding-left: 2rem;
+        }
+
+        .artist-block:last-of-type {
+            border-bottom: none;
+        }
+        /* Адаптация для мобильных */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .artist-block {
+                padding: 2rem 0;
+            }
+            
+            .artist-photo {
+                height: 350px;
+                margin-bottom: 2rem;
+            }
+            
+            .artist-info {
+                padding: 0 1rem;
+                text-align: center;
+            }
+            
+            h2 {
+                font-size: 35px;
+            }
+            
+            h3 {
+                font-size: 28px;
+            }
+            
+            p {
+                font-size: 20px;
+            }
+            
+            .artist-years {
+                font-size: 22px;
+            }
+            
+            .painting-img {
+                height: 200px;
+                margin-top: 0.9rem;
+            }
+            
+            #site-logo {
+                height: 70px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .navbar-nav .nav-link {
+                font-size: 20px;
+            }
+
+            .main-title {
+            padding: 5rem 0 3rem;
+            }
+
+            .artist-header {
+                padding-left: 0;
+                text-align: center;
+                margin-top: 1.5rem;
+            }
+            
+            /* Чтобы фото и ФИО шли вертикально на мобильных */
+            .row.align-items-center {
+                flex-direction: column;
+            }
+
+            .artist-bio {
+                text-align: justify;
+            }
+            
+        }

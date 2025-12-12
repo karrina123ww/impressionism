@@ -1,0 +1,279 @@
+        /* Ваши кастомные цвета и стили */
+        :root {
+            --header-bg: #EAE3D6;
+            --main-bg: #F8F5F0;
+            --text-color: #3E3B39;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--main-bg);
+            padding-top: 76px;
+            color: var(--text-color) !important;
+        }
+        /* Устанавливаем цвет текста для всех основных элементов */
+        h1, h2, h3, h4, h5, h6,
+        p, .navbar-nav .nav-link,
+        .navbar-brand, .logo-text,
+        .custom-footer,
+        .custom-footer a {
+            color: var(--text-color) !important;
+        }
+        /* Стили для шапки */
+        .custom-header {
+            background-color: var(--header-bg) !important;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+        .logo-text {
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        /* Стили для навигационных ссылок */
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            margin: 0 5px;
+            font-size: 30px;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: 600;
+        }
+        
+        /* Слайдер фотографий во всю ширину */
+        .full-width-slider {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            overflow: hidden;
+            height: 600px;
+        }
+        
+        .slider-container {
+            position: relative;
+            height: 100%;
+        }
+        
+        .slider-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .slider-slide.active {
+            opacity: 1;
+        }
+        
+        .slider-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Основные стили для контента */
+        .content-section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #e9e1d5;
+            text-align: justify;
+        }
+        
+        .content-section:last-of-type {
+            border-bottom: none;
+        }
+        
+        h2 {
+            font-weight: 600;
+            font-size: 45px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        h3 {
+            font-weight: 500;
+            font-size: 35px;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 25px;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Стили для блока "Черты" */
+        .traits-grid {
+            margin-top: 2rem;
+        }
+        
+        .trait-item {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .trait-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .trait-title {
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .trait-description {
+            font-size: 20px;
+            font-weight: 500;
+            color: #666;
+        }
+        
+        /* ВАРИАНТ 1: Простой список (ваш вариант) */
+        .techniques-list {
+            font-size: 25px;
+            line-height: 1.8;
+        }
+        
+        .techniques-list li {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+        }
+        
+        /* ВАРИАНТ 2: Интересный вариант с иконками */
+        .techniques-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .technique-card {
+            background: var(--header-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .technique-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background-color: var(--header-bg);
+            padding: 10px;
+        }
+        
+        .technique-card h4 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .technique-card p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        
+        /* Подвал */
+        .custom-footer {
+            background-color: var(--header-bg);
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        .custom-footer a {
+            text-decoration: none;
+        }
+
+        #site-logo {
+            height: 130px;
+        }
+        
+        /* Адаптация для мобильных */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .full-width-slider {
+                height: 400px;
+                margin-bottom: 2rem;
+            }
+            
+            .content-section {
+                padding: 2rem 0;
+            }
+            
+            h2 {
+                font-size: 35px;
+            }
+            
+            h3 {
+                font-size: 28px;
+            }
+            
+            p {
+                font-size: 20px;
+            }
+            
+            .trait-img {
+                height: 200px;
+            }
+            
+            .trait-title {
+                font-size: 20px;
+            }
+            
+            .trait-description {
+                font-size: 16px;
+            }
+            
+            .techniques-list {
+                font-size: 20px;
+            }
+            
+            #site-logo {
+                height: 70px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+            
+            .navbar-nav .nav-link {
+                font-size: 20px;
+            }
+            
+            .technique-card {
+                padding: 1.5rem;
+            }
+            
+            .technique-card h4 {
+                font-size: 20px;
+            }
+            
+            .technique-card p {
+                font-size: 16px;
+            }
+
+            .technique-img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .custom-footer {
+                font-size: 20px; /* или 14px, 15px - подберите нужный размер */
+                padding: 1.5rem 0; /* можно также уменьшить отступы */
+            }
+        }
