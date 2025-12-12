@@ -150,4 +150,9 @@
         .custom-footer .row > div {
             margin-bottom: 1rem;
         }
+
+        #site-logo {
+            height: 70px;
+        }
+
     }
