@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Импрессионизм - Тест</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Шрифт Raleway -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-header fixed-top">
+        <div class="container">
+            <!-- Лого и название -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="Логотип" id="site-logo">
+                <span class="logo-text">ИМПРЕССИОНИЗМ</span>
+            </a>
+            
+            <!-- Кнопка для мобильных -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Навигационные разделы -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artists.html">художники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">история</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test.html">тест</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container test-section">
+        <h2>Тест по импрессионизму</h2>
+        <p class="test-description">Проверьте свои знания об импрессионизме. В тесте 15 вопросов, выберите правильные ответы.</p>
+        
+        <!-- Форма теста -->
+        <form id="testForm">
+            <!-- Вопросы 1-5: Основы импрессионизма -->
+            <div class="question-block" data-correct="в">
+                <div class="question-title">Вопрос 1: Как возникло название художественного направления «импрессионизм»?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question1" value="а" class="option-radio">
+                        <span class="option-text">а) Художники сами придумали его для своего манифеста.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question1" value="б" class="option-radio">
+                        <span class="option-text">б) Его дала академия художеств в честь нового стиля.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question1" value="в" class="option-radio">
+                        <span class="option-text">в) Критик использовал его в насмешку, по названию картины Моне.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question1" value="г" class="option-radio">
+                        <span class="option-text">г) Оно было заимствовано из поэзии того времени.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 2: Какая техническая особенность НЕ характерна для живописной манеры импрессионистов?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question2" value="а" class="option-radio">
+                        <span class="option-text">а) Работа чистыми, не смешанными на палитре цветами.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question2" value="б" class="option-radio">
+                        <span class="option-text">б) Использование темного грунта для придания глубины.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question2" value="в" class="option-radio">
+                        <span class="option-text">в) Отказ от черного цвета для изображения теней.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question2" value="г" class="option-radio">
+                        <span class="option-text">г) Быстрые, короткие и фактурные мазки.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 3: Что являлось главным объектом изображения и главным «героем» картин импрессионистов?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question3" value="а" class="option-radio">
+                        <span class="option-text">а) Исторические события и библейские сюжеты.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question3" value="б" class="option-radio">
+                        <span class="option-text">б) Свет и его изменчивые эффекты.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question3" value="в" class="option-radio">
+                        <span class="option-text">в) Детально проработанные портреты знати.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question3" value="г" class="option-radio">
+                        <span class="option-text">г) Фантастические и мифологические образы.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="в">
+                <div class="question-title">Вопрос 4: Какая из перечисленных тем была характерна для сюжетов картин импрессионистов?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question4" value="а" class="option-radio">
+                        <span class="option-text">а) Аллегорические изображения добродетелей.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question4" value="б" class="option-radio">
+                        <span class="option-text">б) Сцены из древнегреческих мифов.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question4" value="в" class="option-radio">
+                        <span class="option-text">в) Повседневная жизнь современных горожан.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question4" value="г" class="option-radio">
+                        <span class="option-text">г) Официальные парады и торжества.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 5: Какое фундаментальное значение имел импрессионизм для последующего искусства?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question5" value="а" class="option-radio">
+                        <span class="option-text">а) Он восстановил и укрепил классические каноны живописи.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question5" value="б" class="option-radio">
+                        <span class="option-text">б) Он доказал, что искусство — это не только копирование, но и передача впечатления и личного видения.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question5" value="в" class="option-radio">
+                        <span class="option-text">в) Он заставил художников вернуться к работе исключительно в мастерских.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question5" value="г" class="option-radio">
+                        <span class="option-text">г) Он сделал черный цвет основным в палитре художников XX века.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <!-- Вопросы 6-10: Художники -->
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 6: Кого называют «добрым дедушкой импрессионизма» и единственным участником всех восьми выставок группы?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question6" value="а" class="option-radio">
+                        <span class="option-text">а) Эдгар Дега</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question6" value="б" class="option-radio">
+                        <span class="option-text">б) Камиль Писсарро</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question6" value="в" class="option-radio">
+                        <span class="option-text">в) Клод Моне</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question6" value="г" class="option-radio">
+                        <span class="option-text">г) Гюстав Кайботт</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 7: Какой художник, будучи вдохновителем импрессионистов, сам не принял полностью их принципы и редко писал на пленэре?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question7" value="а" class="option-radio">
+                        <span class="option-text">а) Пьер-Огюст Ренуар</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question7" value="б" class="option-radio">
+                        <span class="option-text">б) Эдуард Мане</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question7" value="в" class="option-radio">
+                        <span class="option-text">в) Поль Сезанн</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question7" value="г" class="option-radio">
+                        <span class="option-text">г) Мэри Кэссетт</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 8: Работа какого художника дала название всему направлению «импрессионизм»?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question8" value="а" class="option-radio">
+                        <span class="option-text">а) «Бал в Мулен де ла Галетт» Ренуара</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question8" value="б" class="option-radio">
+                        <span class="option-text">б) «Впечатление. Восходящее солнце» Моне</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question8" value="в" class="option-radio">
+                        <span class="option-text">в) «Завтрак на траве» Мане</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question8" value="г" class="option-radio">
+                        <span class="option-text">г) «Олимпия» Мане</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 9: Кто из перечисленных художников НЕ был «ядром» импрессионизма и пошел своим путём?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question9" value="а" class="option-radio">
+                        <span class="option-text">а) Берта Моризо</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question9" value="б" class="option-radio">
+                        <span class="option-text">б) Поль Сезанн</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question9" value="в" class="option-radio">
+                        <span class="option-text">в) Эдгар Дега</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question9" value="г" class="option-radio">
+                        <span class="option-text">г) Гюстав Кайботт</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="в">
+                <div class="question-title">Вопрос 10: Какая художница, будучи американкой, сыграла огромную роль в популяризации импрессионизма в США?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question10" value="а" class="option-radio">
+                        <span class="option-text">а) Берта Моризо</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question10" value="б" class="option-radio">
+                        <span class="option-text">б) Мари Бракмон</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question10" value="в" class="option-radio">
+                        <span class="option-text">в) Мэри Кэссетт</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question10" value="г" class="option-radio">
+                        <span class="option-text">г) Все перечисленные</span>
+                    </label>
+                </div>
+            </div>
+            
+            <!-- Вопросы 11-15: История -->
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 11: Что стало формальным началом публичного раскола между официальным искусством и авангардом в 1863 году?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question11" value="а" class="option-radio">
+                        <span class="option-text">а) Первая выставка импрессионистов у Надара.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question11" value="б" class="option-radio">
+                        <span class="option-text">б) Открытие «Салона отверженных» по разрешению Наполеона III.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question11" value="в" class="option-radio">
+                        <span class="option-text">в) Персональная выставка Клода Моне у Дюран-Рюэля.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question11" value="г" class="option-radio">
+                        <span class="option-text">г) Публикация статьи критика Луи Леруа.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="а">
+                <div class="question-title">Вопрос 12: Какое событие дало название художественному движению «импрессионизм»?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question12" value="а" class="option-radio">
+                        <span class="option-text">а) Критическая статья, высмеивавшая картину Моне «Впечатление. Восходящее солнце».</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question12" value="б" class="option-radio">
+                        <span class="option-text">б) Манифест, опубликованный самими художниками.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question12" value="в" class="option-radio">
+                        <span class="option-text">в) Решение жюри академического Салона.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question12" value="г" class="option-radio">
+                        <span class="option-text">г) Успешный аукцион работ Моне.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 13: Какое событие символизировало кризис и конец единства импрессионистов?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question13" value="а" class="option-radio">
+                        <span class="option-text">а) Третья выставка, где они впервые назвали себя импрессионистами.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question13" value="б" class="option-radio">
+                        <span class="option-text">б) Восьмая групповая выставка, на которую не пришли Моне и Ренуар, но дебютировали пуантилисты.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question13" value="в" class="option-radio">
+                        <span class="option-text">в) «Салон отверженных» 1863 года.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question13" value="г" class="option-radio">
+                        <span class="option-text">г) Ретроспектива Моне в галерее Дюран-Рюэля.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="б">
+                <div class="question-title">Вопрос 14: Что окончательно закрепило финансовый триумф и признание импрессионизма?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question14" value="а" class="option-radio">
+                        <span class="option-text">а) Поддержка императора Наполеона III.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question14" value="б" class="option-radio">
+                        <span class="option-text">б) Высокие продажи на аукционе и ретроспективе Клода Моне.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question14" value="в" class="option-radio">
+                        <span class="option-text">в) Участие в официальном Парижском Салоне.</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question14" value="г" class="option-radio">
+                        <span class="option-text">г) Переход многих художников к технике пуантилизма.</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question-block" data-correct="в">
+                <div class="question-title">Вопрос 15: Кто сыграл ключевую роль в коммерческом успехе и популяризации импрессионистов?</div>
+                <div class="options-container">
+                    <label class="option-label">
+                        <input type="radio" name="question15" value="а" class="option-radio">
+                        <span class="option-text">а) Критик Луи Леруа</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question15" value="б" class="option-radio">
+                        <span class="option-text">б) Фотограф Надар</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question15" value="в" class="option-radio">
+                        <span class="option-text">в) Арт-дилер Поль Дюран-Рюэль</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="question15" value="г" class="option-radio">
+                        <span class="option-text">г) Художник Жорж Сёра</span>
+                    </label>
+                </div>
+            </div>
+            
+            <!-- Кнопки -->
+            <div class="buttons-container">
+                <button type="button" class="test-btn submit-btn" id="submitTest">Завершить тест</button>
+            </div>
+        </form>
+        
+        <!-- Результаты -->
+        <div class="results-container" id="resultsContainer">
+            <h2 class="results-title">Результаты теста</h2>
+            <div class="score-display" id="scoreDisplay">0/15</div>
+            <div class="score-text" id="scoreText"></div>
+            <div class="result-message" id="resultMessage"></div>
+            <div class="buttons-container" style="margin-top: 2rem;">
+                <button type="button" class="test-btn retry-btn" id="retryTest">Пройти тест заново</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 Сайт создан Кариной Мерзловой</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Контакты: 
+                        <a href="mailto:hihi23@lala.com">hihi23@lala.com</a> | 
+                        <a href="tel:+99999999999">+9 (999) 999-99-99</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Скрипт для теста -->
+    <script src="js/script3.js"></script>
+</body>
+</html>

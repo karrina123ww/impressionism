@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Импрессионизм - Галерея</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Иконки Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-header fixed-top">
+        <div class="container">
+            <!-- Лого и название -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="Логотип" id="site-logo">
+                <span class="logo-text">ИМПРЕССИОНИЗМ</span>
+            </a>
+            
+            <!-- Кнопка для мобильных -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Навигационные разделы -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artists.html">художники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">история</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test.html">тест</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container gallery-section">
+        <h2>Галерея импрессионизма</h2>
+        <p class="gallery-description">Нажмите на любую картину, чтобы увидеть подробную информацию</p>
+        
+        <!-- Ряд 1 -->
+        <div class="row gallery-row">
+            <div class="col painting-item" data-painting="1">
+                <img src="images/gallery1.jpg" class="painting-thumb">
+                <div class="painting-title-small">Обед на траве</div>
+                <div class="painting-author-small">Эдуард Мане</div>
+            </div>
+            <div class="col painting-item" data-painting="2">
+                <img src="images/gallery2.jpg" class="painting-thumb">
+                <div class="painting-title-small">Впечатление, восход солнца</div>
+                <div class="painting-author-small">Клод Моне</div>
+            </div>
+            <div class="col painting-item" data-painting="3">
+                <img src="images/gallery3.jpg" class="painting-thumb">
+                <div class="painting-title-small">Танцевальный класс</div>
+                <div class="painting-author-small">Эдгар Дега</div>
+            </div>
+            <div class="col painting-item" data-painting="4">
+                <img src="images/gallery4.jpg" class="painting-thumb">
+                <div class="painting-title-small">Завтрак гребцов</div>
+                <div class="painting-author-small">Пьер Огюст Ренуар</div>
+            </div>
+            <div class="col painting-item" data-painting="5">
+                <img src="images/gallery5.jpg" class="painting-thumb">
+                <div class="painting-title-small">Абсент</div>
+                <div class="painting-author-small">Эдгар Дега</div>
+            </div>
+        </div>
+        
+        <!-- Ряд 2 -->
+        <div class="row gallery-row">
+            <div class="col painting-item" data-painting="6">
+                <img src="images/gallery6.jpg" class="painting-thumb">
+                <div class="painting-title-small">Пруд с кувшинками, Розовая гармония</div>
+                <div class="painting-author-small">Клод Моне</div>
+            </div>
+            <div class="col painting-item" data-painting="7">
+                <img src="images/gallery7.jpg" class="painting-thumb">
+                <div class="painting-title-small">Парижская улица в дождливую погоду</div>
+                <div class="painting-author-small">Гюстав Кайботт</div>
+            </div>
+            <div class="col painting-item" data-painting="8">
+                <img src="images/gallery8.jpg" class="painting-thumb">
+                <div class="painting-title-small">Прогулка на лодке</div>
+                <div class="painting-author-small">Мэри Кассат</div>
+            </div>
+            <div class="col painting-item" data-painting="9">
+                <img src="images/gallery9.jpg" class="painting-thumb">
+                <div class="painting-title-small">Колыбель</div>
+                <div class="painting-author-small">Берта Моризо</div>
+            </div>
+            <div class="col painting-item" data-painting="10">
+                <img src="images/gallery10.jpg" class="painting-thumb">
+                <div class="painting-title-small">Женщина с зонтиком - Мадам Моне и ее сын</div>
+                <div class="painting-author-small">Клод Моне</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="" id="modalImg">
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-author" id="modalAuthor"></div>
+                    <div class="modal-year" id="modalYear"></div>
+                    <div class="modal-description" id="modalDescription"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 Сайт создан Кариной Мерзловой</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Контакты: 
+                        <a href="mailto:hihi23@lala.com">hihi23@lala.com</a> | 
+                        <a href="tel:+99999999999">+9 (999) 999-99-99</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+    <!-- Скрипт для галереи -->
+    <script src="js/script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Художники импрессионизма</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-header fixed-top">
+        <div class="container">
+            <!-- Лого и название -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="Логотип" id="site-logo">
+                <span class="logo-text">ИМПРЕССИОНИЗМ</span>
+            </a>
+            
+            <!-- Кнопка для мобильных -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Навигационные разделы -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artists.html">художники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">история</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test.html">тест</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Заголовок страницы -->
+        <section class="main-title">
+            <h2>Художники импрессионизма</h2>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- Фото слева -->
+                <div class="col-md-4">
+                    <img src="images/Claude_Monet.jpg" class="artist-photo">
+                </div>
+                <!-- ФИО и годы справа -->
+                <div class="col-md-8 artist-header">
+                    <h3>Клод Моне́</h3>
+                    <div class="artist-years">1840-1926</div>
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Клод Моне — центральная фигура импрессионизма, «глава школы». Именно его картина «Впечатление. Восходящее солнце» дала имя движению. Он посвятил жизнь изучению света, атмосферы и их изменений в разное время суток и года. Работал сериями (стога, Руанский собор, кувшинки), стремясь уловить неуловимые нюансы восприятия. Провел последние десятилетия жизни в Живерни, где создал знаменитый сад и пруд с кувшинками, ставшие главными мотивами его поздних монументальных работ.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/claude_art1.jpg" class="painting-img">
+                    <div class="painting-title">Впечатление. Восходящее Солнце</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/claude_art2.jpg" class="painting-img">
+                    <div class="painting-title">Завтрак на Траве</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/claude_art3.jpg" class="painting-img">
+                    <div class="painting-title">Кувшинки</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- ФИО и годы слева -->
+                <div class="col-md-8 order-md-1 artist-header">
+                    <h3>Пьер-Огю́ст Ренуа́р</h3>
+                    <div class="artist-years">1834-1917</div>
+                </div>
+                <!-- Фото справа -->
+                <div class="col-md-4 order-md-2">
+                    <img src="images/Pierre-Auguste_Renoir.jpg" class="artist-photo">
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Художник радости, праздника жизни и женской красоты. В его работах царит ощущение счастья, легкости и сиюминутного наслаждения. Ренуар виртуозно передавал игру солнечных бликов на лицах, одежде, в природе («эффект пёстрого света»). Писал портреты, бытовые сцены, ню и натюрморты. В поздний период, страдая от артрита, обратился к более плотной, скульптурной манере, но сохранил любовь к гармонии и пластике форм.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/pierre_art1.jpg" class="painting-img">
+                    <div class="painting-title">Бал в Мулен де ла Галетт</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/pierre_art2.jpg" class="painting-img">
+                    <div class="painting-title">Завтрак гребцов</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/pierre_art3.jpg" class="painting-img">
+                    <div class="painting-title">Девушки за фортепьяно</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- Фото слева -->
+                <div class="col-md-4">
+                    <img src="images/Edgar_Degas.jpeg" class="artist-photo">
+                </div>
+                <!-- ФИО и годы справа -->
+                <div class="col-md-8 artist-header">
+                    <h3>Эдга́р Дега́</h3>
+                    <div class="artist-years">1834–1917</div>
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Хотя Дега участвовал в большинстве выставок импрессионистов, он не любил пленэр, предпочитая театр, балет, скачки и жизнь города. Его называли «художником танцовщиц». Мастер композиции и движения, он использовал неожиданные ракурсы, срезы фигур рамкой, словно подглядывая за мимолетными, непринуждёнными моментами. Работал не только с маслом, но и пастелью, скульптурой. Его искусство — это синтез классического рисунка и импрессионистического видения.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/edgar_art1.jpg" class="painting-img">
+                    <div class="painting-title">Голубые танцовщицы</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/edgar_art2.jpg" class="painting-img">
+                    <div class="painting-title">Абсент</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/edgar_art3.jpg" class="painting-img">
+                    <div class="painting-title">Урок танца</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- ФИО и годы слева -->
+                <div class="col-md-8 order-md-1 artist-header">
+                    <h3>Бе́рта Мари́ Поли́н Моризо́</h3>
+                    <div class="artist-years">1841–1895</div>
+                </div>
+                <!-- Фото справа -->
+                <div class="col-md-4 order-md-2">
+                    <img src="images/Berta_Morizo.jpg" class="artist-photo">
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Первая женщина-импрессионист, внучатая племянница Фрагонара. Была музой и моделью Эдуарда Мане, позже вышла замуж за его брата. Её творчество сосредоточено на интимном, частном мире женщины и ребёнка: сцены в интерьерах, на балконах, в садах. Для её манеры характерны лёгкость, воздушность, вибрирующий мазок и изысканная цветовая гамма. Была ключевой фигурой в организации импрессионистских выставок.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/berta_art1.jpg" class="painting-img">
+                    <div class="painting-title">Колыбель</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/berta_art2.jpg" class="painting-img">
+                    <div class="painting-title">Летний день</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/berta_art3.jpg" class="painting-img">
+                    <div class="painting-title">Женщина и ребёнок на балконе</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- Фото слева -->
+                <div class="col-md-4">
+                    <img src="images/Pissarro.jpg" class="artist-photo">
+                </div>
+                <!-- ФИО и годы справа -->
+                <div class="col-md-8 artist-header">
+                    <h3>Ками́ль Писсарро́</h3>
+                    <div class="artist-years">1830–1903</div>
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>«Добрый дедушка импрессионизма», единственный художник, участвовавший во всех восьми выставках группы. Был старше других и пользовался большим уважением как мудрый наставник (его советами пользовались Гоген и Сезанн). Писал в основном сельские пейзажи, виды улиц и бульваров Парижа, подчёркивая конструктивность и материальность мира. Экспериментировал с пуантилизмом, но вернулся к более свободной манере. Его работы полны ощущения гармонии и покоя.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/kamil_art1.jpg" class="painting-img">
+                    <div class="painting-title">Бульвар Монмартр в Париже</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/kamil_art2.jpg" class="painting-img">
+                    <div class="painting-title">Красные крыши в углу деревни зимой</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/kamil_art3.jpg" class="painting-img">
+                    <div class="painting-title">Урожай</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- ФИО и годы слева -->
+                <div class="col-md-8 order-md-1 artist-header">
+                    <h3>Мэ́ри Сти́венсон Кэ́ссетт</h3>
+                    <div class="artist-years">1844–1926</div>
+                </div>
+                <!-- Фото справа -->
+                <div class="col-md-4 order-md-2">
+                    <img src="images/Mary_Cassatt.jpg" class="artist-photo">
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Американская художница, жившая и работавшая в Париже. Подруга и соратница Дега, который высоко ценил её рисунок. Специализировалась на темах материнства и детства, которые трактовала без излишней сентиментальности, с чёткой композицией и ярким, чистым цветом. Сыграла огромную роль в популяризации импрессионизма в США, помогая богатым соотечественникам формировать коллекции.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/mary_art1.jpg" class="painting-img">
+                    <div class="painting-title">Прогулка на лодке</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/mary_art2.jpg" class="painting-img">
+                    <div class="painting-title">Чай</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/mary_art3.jpg" class="painting-img">
+                    <div class="painting-title">Молодая мать за шитьём</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- Фото слева -->
+                <div class="col-md-4">
+                    <img src="images/Gustav.jpg" class="artist-photo">
+                </div>
+                <!-- ФИО и годы справа -->
+                <div class="col-md-8 artist-header">
+                    <h3>Гюста́в Кайбо́тт</h3>
+                    <div class="artist-years">1848–1894</div>
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Богатый наследник, инженер по образованию, художник-любитель и меценат. Финансировал выставки импрессионистов, покупал их работы, спасая друзей от нищеты. Его собственная живопись соединяет фотографичную точность, смелые ракурсы (вид сверху) с импрессионистическим светом. Знаменит изображениями современного Парижа — мостовых, балконов, интерьеров. Его коллекция легла в основу собрания импрессионистов в музее Орсе.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/gustav_art1.jpg" class="painting-img">
+                    <div class="painting-title">Паркетчики</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/gustav_art2.jpg" class="painting-img">
+                    <div class="painting-title">Парижская улица в дождливую погоду</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/gustav_art3.jpg" class="painting-img">
+                    <div class="painting-title">Крыши под снегом</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- ФИО и годы слева -->
+                <div class="col-md-8 order-md-1 artist-header">
+                    <h3>Эдуа́рд Мане́</h3>
+                    <div class="artist-years">1832–1883</div>
+                </div>
+                <!-- Фото справа -->
+                <div class="col-md-4 order-md-2">
+                    <img src="images/Edouard.jpg" class="artist-photo">
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Старший товарищ импрессионистов, их вдохновитель и предтеча, но так и не принявший полностью их принципы. Он стремился к современности сюжетов («Олимпия», «Завтрак на траве»), используя при этом композиции старых мастеров. Его плоский цвет, широкий мазок и отказ от полутонов шокировали публику. Хотя он редко писал на пленэре, его работа со светом и лаконизмом формы оказали решающее влияние на молодых художников.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/edouard_art1.jpg" class="painting-img">
+                    <div class="painting-title">Олимпия</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/edouard_art2.jpg" class="painting-img">
+                    <div class="painting-title">Завтрак на траве</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/edouard_art3.jpg" class="painting-img">
+                    <div class="painting-title">Бар в «Фоли-Бержер</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- Фото слева -->
+                <div class="col-md-4">
+                    <img src="images/Marie_Bracquemond.jpg" class="artist-photo">
+                </div>
+                <!-- ФИО и годы справа -->
+                <div class="col-md-8 artist-header">
+                    <h3>Мари́ Бракмо́н</h3>
+                    <div class="artist-years">1840–1916</div>
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Талантливая художница, чья карьера была ограничена ревнивым и деспотичным мужем, художником-керамистом Феликсом Бракемоном. Участвовала в трёх выставках импрессионистов (1879, 1880, 1886). Её стиль, находившийся под влиянием Дега и Ренуара, отличается яркой палитрой, смелыми композициями и изящным рисунком. Большая часть её наследия не сохранилась или осталась малоизвестной.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/bracmont_art1.jpg" class="painting-img">
+                    <div class="painting-title">На террасе в Севре</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/bracmont_art2.jpg" class="painting-img">
+                    <div class="painting-title">Автопортрет</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/bracmont_art3.jpg" class="painting-img">
+                    <div class="painting-title">Под лампой</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artist-block">
+            <!-- Первая строка: фото и ФИО -->
+            <div class="row align-items-center">
+                <!-- ФИО и годы слева -->
+                <div class="col-md-8 order-md-1 artist-header">
+                    <h3>Поль Сеза́нн</h3>
+                    <div class="artist-years">1839–1906</div>
+                </div>
+                <!-- Фото справа -->
+                <div class="col-md-4 order-md-2">
+                    <img src="images/Paul.jpg" class="artist-photo">
+                </div>
+            </div>
+            
+            <!-- Вторая строка: информация на всю ширину -->
+            <div class="row">
+                <div class="col-12 artist-bio">
+                    <p>Участник первой и третьей выставок импрессионистов, но пошел своим путём. Его часто называют «отцом модернизма». Если импрессионисты искали изменчивость, то Сезанн — вечность и структуру. Он стремился «вернуть природе форму цилиндра, шара, конуса». Его аналитический метод, работа с цветом для создания формы и объёма, деформации ради выразительности предвосхитили кубизм Пикассо. Создал уникальную пластическую систему, оказавшую огромное влияние на искусство XX века.</p>
+                </div>
+            </div>
+            
+            <!-- Третья строка: картины на всю ширину -->
+            <div class="row paintings-gallery">
+                <div class="col-md-4">
+                    <img src="images/paul_art1.jpg" class="painting-img">
+                    <div class="painting-title">Игроки в карты</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/paul_art2.jpg" class="painting-img">
+                    <div class="painting-title">Гора Сент-Виктуар и Чёрный замок</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/paul_art3.jpg" class="painting-img">
+                    <div class="painting-title">Натюрморт с кувшином и драпировкой</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 Сайт создан Кариной Мерзловой</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Контакты: 
+                        <a href="mailto:hihi23@lala.com">hihi23@lala.com</a> | 
+                        <a href="tel:+99999999999">+9 (999) 999-99-99</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
