@@ -199,24 +199,7 @@
         #site-logo {
             height: 130px;
         }
-        .cookie-notification {
-            position: fixed;
-            background-color: rgba(0, 0, 0, .8);
-            bottom: 0;
-            width: 100%;
-            color: white;
-            padding: 15px;
-        }
-        .cookie-notification_hidden_yes {
-            display: none;
-        }
-        .cookie-notification__header {
-            margin-bottom: 10px;
-            font-size: 23px;
-        }
-        .cookie-notification__body {
-            margin-bottom: 10px;
-        }
+
         
         /* Адаптация для мобильных */
         @media (max-width: 768px) {
@@ -296,3 +279,4 @@
             }
 
         }
+
