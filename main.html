@@ -12,6 +12,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style3.css">
+    
+    <!-- Библиотека для работы с cookie -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.js"></script>
+    
+    <!-- Стили для уведомления о cookie -->
+    <style>
+        .cookie-notification {
+            position: fixed;
+            background: #F8F5F0;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            max-width: 400px;
+            color: #3E3B39;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            font-family: 'Raleway', sans-serif;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .cookie-notification_hidden_yes {
+            display: none;
+        }
+        
+        .cookie-notification__header {
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #3E3B39;
+        }
+        
+        .cookie-notification__body {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+        
+        .cookie-notification__body a {
+            color: #3E3B39;
+        }
+        
+        .cookie-notification__button {
+            background: #EAE3D6;
+            color: #3E3B39;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            border: 2px solid transparent;
+        }
+        
+        @media (min-width: 768px) {
+            .cookie-notification {
+                left: 30px;
+                right: auto;
+                bottom: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Шапка -->
@@ -137,6 +208,18 @@
             <p>Импрессионизм доказал, что искусство — это не только точное копирование действительности, но и передача эмоций, впечатлений и личного видения художника.</p>
         </section>
     </main>
+    
+    <!-- Уведомление о сборе данных -->
+    <div class="cookie-notification cookie-notification_hidden_yes">
+        <div class="cookie-notification__header">🍪 Мы ценим вашу приватность</div>
+        <div class="cookie-notification__body">
+            <p>Этот сайт собирает статистику посещения для улучшения работы. Продолжая использовать сайт, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>.</p>
+        </div>
+        <div class="cookie-notification__buttons">
+            <button class="cookie-notification__button" id="yes">Принять и продолжить</button>
+        </div>
+    </div>
+
     <!-- Подвал -->
     <footer class="custom-footer">
         <div class="container">
@@ -159,9 +242,91 @@
     
     <!-- Скрипт для слайдера -->
     <script src="js/script.js"></script>
+    
+    <!-- Скрипт для уведомления о cookie -->
+    <script type="text/javascript">
+        (function() {
+            // Элемент уведомления
+            var messageElement = document.querySelector('.cookie-notification');
+            
+            // Функция добавляет класс к DOM-элементу
+            function addClass(o, c) {
+                if (!o) return;
+                var re = new RegExp("(^|\\s)" + c + "(\\s|$)", "g");
+                if (!re.test(o.className)) {
+                    o.className = (o.className + " " + c).replace(/\s+/g, " ").trim();
+                }
+            }
+            
+            // Функция удаляет класс из DOM-элемента
+            function removeClass(o, c) {
+                if (!o) return;
+                var re = new RegExp('(^|\\s)' + c + '(\\s|$)', 'g');
+                o.className = o.className.replace(re, ' ').replace(/\s+/g, ' ').trim();
+            }
+            
+            // Функция прячет уведомление
+            function hideMessage() {
+                addClass(messageElement, 'cookie-notification_hidden_yes');
+            }
+            
+            // Функция показывает уведомление
+            function showMessage() {
+                removeClass(messageElement, 'cookie-notification_hidden_yes');
+            }
+            
+            // Сохранение согласия
+            function saveAnswer() {
+                hideMessage();
+                Cookies.set('agreement', '1', { expires: 365 }); // Cookies на год
+                console.log('Согласие сохранено');
+            }
+            
+            // Инициализация счетчика (замените XXXX на ваш номер счетчика)
+            function initCounter() {
+                // Здесь код инициализации счетчика
+                // ym(XXXX, 'init', {});
+                saveAnswer();
+            }
+            
+            // Проверяем наличие cookies
+            if (typeof Cookies !== 'undefined') {
+                if (!Cookies.get('agreement')) {
+                    // Показываем уведомление с небольшой задержкой
+                    setTimeout(showMessage, 1000);
+                } else {
+                    initCounter();
+                }
+            } else {
+                console.warn('Библиотека Cookies не загружена');
+                showMessage();
+            }
+            
+            // Обработчик кнопки согласия
+            var yesButton = document.querySelector('#yes');
+            if (yesButton) {
+                yesButton.addEventListener('click', function() {
+                    initCounter();
+                });
+            }
+            
+            // Загрузка счетчика (опционально)
+            (function(m, e, t, r, i, k, a) {
+                m[i] = m[i] || function() {
+                    (m[i].a = m[i].a || []).push(arguments);
+                };
+                m[i].l = 1 * new Date();
+                k = e.createElement(t);
+                a = e.getElementsByTagName(t)[0];
+                k.async = 1;
+                k.src = r;
+                a.parentNode.insertBefore(k, a);
+            })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+        })();
+    </script>
 </body>
-
 </html>
+
 
 
 
